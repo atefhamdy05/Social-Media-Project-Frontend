@@ -37,7 +37,7 @@ const NavBar = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/about" onClick={closeMenu}>
+            <NavLink to="/posts" onClick={closeMenu}>
               About
             </NavLink>
           </li>

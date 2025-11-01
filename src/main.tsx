@@ -16,8 +16,7 @@ import UsersSettings from './Pages/Settings/users/index.tsx'
 import RolesSettings from './Pages/Settings/roles/index.tsx'
 import { IsAllowedPermissionOrRedirect } from './Pages/Guards/IsAllowedPermission.tsx'
 import SignUp from './Pages/Auth/SignUp.tsx';
-import Cool from './Pages/Auth/cool.tsx';
-
+import PostList from './Pages/Services/Posts/postlist.tsx';
 const router = createBrowserRouter ([
   {
     path:"/",
@@ -64,27 +63,10 @@ const router = createBrowserRouter ([
           
         ]
       },
-
       {
-        path:'/Cool',
-        children:[
-          
-          {
-            path:'page',
-            element:(
-            <Cool/>
-            )
-          },
-         
-          
-         
-          
-        ]
+        path: "posts",
+        element: <PostList/>,
       },
-
-
-
-
       {
         path:'/auth',
         // element:<div dir='rtl'><Outlet /></div>,

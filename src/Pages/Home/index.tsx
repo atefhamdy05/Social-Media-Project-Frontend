@@ -1,10 +1,9 @@
 import Page from "../../Components/Shared/Page"
+import PostList from "../Services/Posts/postlist"
 
 const Home = () => {
   return (
-  <Page title="">
-    <div></div>
-  </Page>
+  <PostList/>
   )
 }
 
